@@ -1,0 +1,15 @@
+{
+  "name": "web_nosime_laravel",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && ng serve",
+    "server": "cd server && php artisan serve",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "postinstall": "npm run install-client",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && composer install"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
